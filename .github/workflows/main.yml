@@ -21,7 +21,7 @@ jobs:
         run: |
           echo Building MiniWebView.dll (x86 /MT)
           REM Use Visual Studio Developer Command Prompt environment
-          call "C:\Program Files (x86)\Microsoft Visual Studio\2019\BuildTools\VC\Auxiliary\Build\vcvarsall.bat" x86
+          call "C:\Program Files (x86)\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvarsall.bat" x86
           cl /nologo /EHsc /MT /LD MiniWebView.cpp /link /OUT:MiniWebView.dll ole32.lib oleaut32.lib uuid.lib user32.lib gdi32.lib
 
       - name: Upload DLL artifact
