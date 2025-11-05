@@ -1,0 +1,1 @@
+Place Unit1.cpp code into your BCB6 form unit. Ensure MiniWebView.dll is next to the EXE.

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="Windows-1252"?>
+<VisualStudioProject ProjectType="Visual C++" Version="10.00" Name="MiniWebView" ProjectGUID="{D4B3A9C1-0000-4C2A-9B9A-000000000000}" RootNamespace="MiniWebView" Keyword="Win32Proj">
+    <Platforms>
+        <Platform Name="Win32" />
+    </Platforms>
+    <Configurations>
+        <Configuration Name="Release|Win32" OutputDirectory="$(SolutionDir)\$(ConfigurationName)" IntermediateDirectory="$(ConfigurationName)\MiniWebView" ConfigurationType="2" UseOfMFC="0" ATLMinimizesCRunTimeLibraryUsage="false">
+            <ToolFiles />
+            <Tool Name="VCPreBuildEventTool" />
+            <Tool Name="VCCLCompilerTool">
+                <Optimization>2</Optimization>
+                <AdditionalIncludeDirectories>$(ProjectDir)</AdditionalIncludeDirectories>
+                <RuntimeLibrary>2</RuntimeLibrary> <!-- 2 = Multi-threaded (/MT) -->
+                <WarningLevel>3</WarningLevel>
+                <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;MINIWEBVIEW_EXPORTS</PreprocessorDefinitions>
+            </Tool>
+            <Tool Name="VCLinkerTool">
+                <OutputFile>$(OutDir)\MiniWebView.dll</OutputFile>
+                <AdditionalDependencies>ole32.lib;oleaut32.lib;uuid.lib;user32.lib;gdi32.lib;</AdditionalDependencies>
+                <GenerateDebugInformation>false</GenerateDebugInformation>
+            </Tool>
+        </Configuration>
+    </Configurations>
+    <Files>
+        <Filter Name="Source Files">
+            <File RelativePath=".\MiniWebView.cpp" />
+        </Filter>
+        <Filter Name="Header Files">
+            <File RelativePath=".\MiniWebView.h" />
+        </Filter>
+    </Files>
+</VisualStudioProject>
