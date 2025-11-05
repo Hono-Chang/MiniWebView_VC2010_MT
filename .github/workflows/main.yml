@@ -25,7 +25,7 @@ jobs:
           cl /nologo /EHsc /MT /LD MiniWebView.cpp /link /OUT:MiniWebView.dll ole32.lib oleaut32.lib uuid.lib user32.lib gdi32.lib
 
       - name: Upload DLL artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: MiniWebView_DLL
           path: MiniWebView.dll
